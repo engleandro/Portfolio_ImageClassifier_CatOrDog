@@ -30,7 +30,7 @@ Downloads:
 
 Clone the source codes on my GitHub repository:
 
-    $ git clone git@github.com:engleandro/Portifolio-ImageClassifier.git
+    $ git clone git@github.com:engleandro/Portfolio_ImageClassifier_CatOrDog.git
 
 Create a repository and download the dataset:
 
