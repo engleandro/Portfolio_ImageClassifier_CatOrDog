@@ -41,3 +41,4 @@ EXPOSE 6006
 #EXPOSE 80
 
 RUN python3 app.py
+

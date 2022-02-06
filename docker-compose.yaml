@@ -12,10 +12,14 @@ services:
             - "6006:6006"
         env_file: "setup/.env[MODEL]"
         volumes:
-            - model:/usr/app/model
-            - logs:/usr/app/logs
-        #command: python3 app.py
+            - type: bind
+              source: model
+              target: /usr/app/model
+            - type: bind
+              source: logs
+              target: /usr/app/logs
         command: tensorboard --bind_all --logdir /usr/app/logs/fit
+        #command: python3 app.py
         #command: gunicorn platform_rest.wsgi --bind 0.0.0.0:80 --workers 2   #- "80:80"
 
 
