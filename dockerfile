@@ -16,12 +16,11 @@ COPY . .
 
 #RUN make install
 
-RUN apt-get update
+RUN apt-get update \
+  && pip install --upgrade pip setuptools wheel \
+  && pip install -r ./setup/packages
 #&& apt-get install -y wget
 #&& apt-get install -y nvidia-cuda-toolkit
-
-RUN pip install --upgrade pip setuptools wheel
-RUN pip install -r ./setup/packages
 
 #RUN wget -P ${DATASET_DIR} ${IMAGES_URL}
 #RUN wget -O ${DATASET_DIR}/images.tar.gz ${IMAGES_URL}

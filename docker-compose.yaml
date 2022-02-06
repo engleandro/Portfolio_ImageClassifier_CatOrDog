@@ -13,10 +13,10 @@ services:
         env_file: "setup/.env[MODEL]"
         volumes:
             - type: bind
-              source: model
+              source: ./model
               target: /usr/app/model
             - type: bind
-              source: logs
+              source: ./logs
               target: /usr/app/logs
         command: tensorboard --bind_all --logdir /usr/app/logs/fit
         #command: python3 app.py
