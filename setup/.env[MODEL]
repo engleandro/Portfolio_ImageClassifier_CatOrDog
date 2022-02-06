@@ -1,0 +1,23 @@
+[DatasetWebsite]
+DATASET_WEBSITE=https://www.robots.ox.ac.uk/~vgg/data/pets/
+
+[Downloads]
+IMAGES_URL=https://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz
+ANNOTATIONS_URL=https://www.robots.ox.ac.uk/~vgg/data/pets/data/annotations.tar.gz
+
+[Dataset]
+DATASET_DIR=/usr/app/dataset
+TOTAL_IMAGES=7393
+MODELLING_IMAGES=2500
+
+[Model]
+IMAGE_SIZE=256, 256
+RANDOM_STATE=7
+TRAIN_SIZE=0.6000
+VALIDATION_SIZE=0.200
+TEST_SIZE=0.200
+BATCH_SIZE=32
+LEARNING_RATE=0.0001
+EPOCHS=100
+PLOTS_DPI=200
+
