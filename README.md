@@ -74,9 +74,9 @@ The docker-compose allows TensorBoard GUI by running the command line below:
 
 The dataset should be divided into train, validation and test datasets by:
 
-- 60% to train the model,
-- 20% to validate the model,
-- 20% to test the model.
+- 70% to train the model,
+- 15% to validate the model,
+- 15% to test the model.
 
 For each image file, its label class was extracted from the filename. Dog's image starts with lower case and cat's image starts with upper case.
 
